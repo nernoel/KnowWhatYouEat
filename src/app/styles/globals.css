@@ -1,0 +1,341 @@
+/* globals.css */
+
+/* Define global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar.css */
+
+/* Styling for Navbar component */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar-container h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar-buttons {
+  display: flex;
+}
+
+.navbar-button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.navbar-button:hover {
+  background-color: #45a049;
+  /* Darker Green */
+}
+
+
+/* login-form.css */
+
+/* Styling for LoginForm component */
+.login-form-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  /* Center the content horizontally */
+}
+
+.login-form-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center form items horizontally */
+}
+
+.login-form-container label {
+  margin-bottom: 10px;
+}
+
+.login-form-container input[type='email'],
+.login-form-container input[type='password'] {
+  width: calc(100% - 20px);
+  /* Set width to 100% minus padding */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* Include padding and border in width calculation */
+}
+
+.login-form-container button[type='submit'] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form-container button[type='submit']:hover {
+  background-color: #45a049;
+}
+
+.login-form-container p.error {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+
+/* Welcome page css styling */
+.dashboard-container {
+  height: 100vh;
+  overflow-y: auto;
+  /* Add vertical scroll when content exceeds viewport height */
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.meal-plans {
+  display: flex;
+  gap: 2rem;
+}
+
+/* meal-card.css */
+
+/* Styling for MealCard component */
+.meal-card {
+  width: 18rem;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.meal-card img {
+  width: 100%;
+  height: 20rem;
+
+}
+
+.meal-card-content {
+  padding: 20px;
+}
+
+.meal-card-content h5 {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.meal-card-content ul {
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.meal-card-content ul li {
+  margin-bottom: 5px;
+}
+
+.meal-card-content button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.meal-card-content button:hover {
+  background-color: #45a049;
+}
+
+.meal-card-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* add-meal-plan-form.css */
+
+/* Styling for AddMealPlanForm component */
+.add-meal-plan-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.add-meal-plan-form-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.add-meal-plan-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-meal-plan-form-container label {
+  margin-bottom: 10px;
+}
+
+.add-meal-plan-form-container input[type='text'],
+.add-meal-plan-form-container input[type='url'],
+.add-meal-plan-form-container input[type='number'] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-meal-plan-form-container button[type='submit'] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-meal-plan-form-container button[type='submit']:hover {
+  background-color: #45a049;
+}
+
+
+/* edit-meal-form.css */
+
+/* Styling for EditMealForm component */
+.edit-meal-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.edit-meal-form-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.edit-meal-form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-meal-form-container form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.edit-meal-form-container form input[type='text'],
+.edit-meal-form-container form input[type='url'],
+.edit-meal-form-container form input[type='number'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-meal-form-container form button[type='submit'] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-meal-form-container form button[type='submit']:hover {
+  background-color: #45a049;
+}
+
+/* registration-form.css */
+
+.registration-form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.registration-form-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.registration-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-form-container label {
+  margin-bottom: 10px;
+}
+
+.registration-form-container input[type='text'],
+.registration-form-container input[type='email'],
+.registration-form-container input[type='password'] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.registration-form-container button[type='submit'] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registration-form-container button[type='submit']:hover {
+  background-color: #45a049;
+}
+
+.registration-form-container p.error {
+  color: #ff0000;
+  margin-top: 10px;
+}
